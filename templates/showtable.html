@@ -1,0 +1,61 @@
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.4.0/css/buttons.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/datetime/1.5.0/css/dataTables.dateTime.min.css">
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.0/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/datetime/1.5.0/js/dataTables.dateTime.min.js"></script>
+<script src="https://editor.datatables.net/extensions/Editor/js/dataTables.editor.min.js"></script>
+
+
+<div class="container" style="margin-top:10px;">
+<div class="row">
+              <div class="col-sm-12 col-md-12">         
+                {{ data_table1 }}
+              </div>
+            </div>
+
+
+</body>
+
+
+<style>
+/*
+    #example input, #example select {
+  font-size:14px;
+  padding:5px 5 5px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  background: transparent;
+  
+}
+
+#example input:focus,#example select:focus  { outline:none; border-bottom:1px solid #757575;}*/
+
+
+
+
+
+</style>
+
+<script>
+
+
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+function saveData(event,fieldname,primaryid){
+            console.log($('#'+event.target.id).val());
+            console.log(fieldname);
+            console.log(primaryid);
+        }
+
+ </script>
